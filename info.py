@@ -33,13 +33,13 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pissuhadenawa15:20030928@cloners.vtvwi.mongodb.net/?retryWrites=true&w=majority&appName=cloners")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cloners")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LKFilmBotSearch')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
